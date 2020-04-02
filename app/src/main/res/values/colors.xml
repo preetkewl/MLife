@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#EDEDED</color>
+    <color name="colorAccent">#e31837</color>
+
+    <color name="colorMain">#e31837</color>
+    <color name="colorMainDark">#e31837</color>
+    <color name="colorSecondry">#FFFFFF</color>
+
+    <color name="Red">#cc0033</color>
+    <color name="White">#FFFFFF</color>
+    <color name="DarkGrey">#4d4948</color>
+    <color name="LightGrey">#6d6e71</color>
+
+    <color name="Light">#e6e6e6</color>
+
+
+    <color name="bd_header_bg">#FFFFFF</color>
+    <color name="bd_body_bg">#FFFFFF</color>
+    <color name="bd_options_button_bg">#bebebe</color>
+    <color name="bd_body_text">#bb021e</color>
+
+
+    <color name="BlackTrans">#70000000</color>
+    <color name="WhiteTrans">#daffffff</color>
+    <color name="Color">#5efd4d</color>
+    <color name="textcolor">#333333</color>
+
+    <color name="colorPrimaryAlpha">#9ce31837</color>
+
+    <color name="colorPrimaryBlackish">#74202d</color>
+    <color name="text_color">#333333</color>
+    <color name="read_grey">#D7D7D7</color>
+    <color name="lightest_grey">#f4f3f3</color>
+    <color name="hint_grey">#a8a8a8</color>
+    <color name="text_grey">#848484</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="colorMainAlpha">#9ce31837</color>
+    <color name="splash_bg">#DE0B2B</color>
+    <color name="blue">#0004e5</color>
+
+</resources>

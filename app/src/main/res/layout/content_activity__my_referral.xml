@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_MyReferral"
+    tools:showIn="@layout/activity__my_referral">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@color/Red"
+            android:padding="8dp"
+            android:src="@mipmap/search" />
+
+        <com.mlife.utils.CustomEditText
+            android:id="@+id/et_Search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Search"
+            android:paddingLeft="50dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <com.mlife.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Contact"
+        android:textColor="@color/Red"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/White">
+
+        <CheckBox
+            android:id="@+id/cb_All"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select All" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_Contacts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="6" />
+
+        <com.mlife.utils.CustomButton
+            android:id="@+id/btn_Invite"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custombutton"
+            android:text="Share App"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</LinearLayout>

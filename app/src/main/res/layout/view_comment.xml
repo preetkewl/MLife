@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="4dp"
+    android:background="@color/White"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".17">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/search_members" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_weight=".83"
+        android:orientation="vertical">
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_commentPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neha Kakkar"
+            android:maxLines="1" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_CommentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello All whats up"
+             />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_DateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date time "
+            android:maxLines="1" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

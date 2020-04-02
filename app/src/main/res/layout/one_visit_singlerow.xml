@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/activeRL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorSecondry">
+
+        <RelativeLayout
+            android:id="@+id/logoRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/grey_circle_shadow"
+            android:gravity="center">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/logoIV"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                app:riv_oval="true"
+                android:scaleType="fitXY"
+                android:elevation="4dp"
+                android:src="@drawable/mahindra_logo"
+
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/programNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/dateTV"
+            android:layout_toRightOf="@+id/logoRL"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Mahindra lifespace Gold"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:fontFamily="@font/proximanova_regular" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/companyNameTV"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/programNameTV"-->
+            <!--android:layout_below="@+id/programNameTV"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:maxLines="1"-->
+            <!--android:ellipsize="end"-->
+            <!--android:layout_toLeftOf="@+id/dateTV"-->
+            <!--android:textColor="@color/text_grey"-->
+            <!--android:text="Mahindra Housing"-->
+            <!--android:textSize="12sp" />-->
+
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="7dp"
+            android:text="12 June 2018"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:fontFamily="@font/proximanova_regular" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/activeRL"
+        android:background="@color/read_grey" />
+
+</RelativeLayout>

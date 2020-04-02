@@ -1,0 +1,226 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_ProjectDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tabla_cuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight=".40"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text="Owner Name"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_OwnerName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight=".60"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight=".40"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text="Project Name"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_ProjectName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight=".60"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight=".40"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text="Tower"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_Tower"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight=".60"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight=".40"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text="Typology"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_Typology"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight=".60"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight=".40"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text="Flat Number"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_FlatNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight=".60"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight=".40"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text="RERA Carpet \n Area (in Sq. Ft.)"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_Area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight=".60"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/customTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight=".40"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text="RERA \nPossession Date"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_Possession"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".60"
+                    android:background="@drawable/shape_cell"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_offerHeadin_LO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15% off on dominos"
+            android:textColor="@color/Red"
+            android:textSize="16sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_offerDetails_LO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_offerValidity_LO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Valid till 15 Aug."
+            android:textColor="@color/Red"
+            android:textSize="16sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_postedBy_LO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Posted By: Admin"
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_postedDate_LO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="20 July-2017, 6.30 PM"
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#dcdcdc" />
+
+</LinearLayout>

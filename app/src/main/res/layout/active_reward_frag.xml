@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondry">
+
+
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/white_shadow_gradient_bg"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/programTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Project"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+           android:fontFamily="@font/proximanova_regular"/>
+
+        <TextView
+            android:id="@+id/claimCodeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Claim Code"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/proximanova_regular" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activeRewardRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerView" />
+
+    <TextView
+        android:id="@+id/active_reward_status_emptyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="You don't have any active rewards."
+        android:textColor="@color/hint_grey"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:fontFamily="@font/proximanova_regular" />
+</RelativeLayout>

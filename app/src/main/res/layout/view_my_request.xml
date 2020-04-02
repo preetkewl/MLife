@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:orientation="vertical">
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_FeedbackHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need Feedback on your Ride"
+                android:maxLines="1"
+                android:textColor="@color/Red"
+                android:textSize="16sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_FeedbackDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Monday, June 20 2017, 06.30 Pm."
+                android:textColor="@color/textcolor"
+                android:textSize="12sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_FeedbackSubmitted"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FEEDBACK SUBMITTED"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/newprojectarrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+
+</LinearLayout>

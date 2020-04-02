@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="You"
+        android:textColor="@color/Red"
+        android:textSize="16sp" />
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:text="22/08/2017"
+        android:textColor="@color/LightGrey"
+        android:textSize="14sp" />
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Hello, How are you what are you doing."
+        android:textColor="@color/DarkGrey"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#d6d6d6" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_EventsDetails"
+    tools:showIn="@layout/activity__events_details">
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_EventHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diwali Celibration"
+        android:maxLines="1"
+        android:textColor="@color/Red"
+        android:textSize="14sp" />
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_EventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:text="Event Date: Thursday, 19 Octuber 2017, 5.00 PM "
+        android:textColor="@color/DarkGrey"
+        android:textSize="12sp" />
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_EventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:text="Location: Park Area"
+        android:textColor="@color/DarkGrey"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/LightGrey" />
+
+    <com.mlife.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Message"
+
+        android:textColor="@color/Red"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_EventDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\n It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_EventNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/custombuttongray"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_EventYes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/custombutton"
+            android:text="Yes, I am in"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

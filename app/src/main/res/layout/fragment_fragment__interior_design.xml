@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_InteriorDesign">
+
+    <LinearLayout
+        android:layout_above="@+id/btn_registerIntrest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:background="@drawable/shape_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="left"
+                    android:text="Packages"
+                    android:textColor="@color/Red" />
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="left"
+                    android:text="Vendor"
+                    android:textColor="@color/Red" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_interior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_registerIntrest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:background="@drawable/custombutton"
+        android:gravity="center"
+        android:text="Register Intrest"
+        android:textAlignment="center"
+        android:textColor="@color/White" />
+
+</RelativeLayout>

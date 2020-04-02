@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_NewProjectDetails"
+    tools:showIn="@layout/activity__new_project_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/iv_ProjectDetailsImage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/projectluanch" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/BlackTrans"
+                android:gravity="center">
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_ProjectLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@mipmap/locationicon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="Goa"
+                    android:textSize="16sp"
+                    android:textColor="@color/White" />
+
+                <com.mlife.utils.CustomButton
+                    android:id="@+id/btn_DropEnquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/Red"
+                    android:drawableLeft="@mipmap/dropanenquiry"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Drop an enquiry"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_ProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="About Luminare"
+                android:textColor="@color/Red"
+                android:textSize="16sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_AboutProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. \n\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+                android:textColor="@color/DarkGrey"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_Features"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/White">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.mlife.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Features and Amenities"
+                        android:textColor="@color/Red"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_ExpandFeatures"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/close" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_Features"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+                android:textColor="@color/DarkGrey"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_Typology"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/White">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.mlife.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Typology and Plans"
+                        android:textColor="@color/Red"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_ExpandTypology"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/close" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_Typology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+                android:textColor="@color/DarkGrey"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_Location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/White">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.mlife.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Location"
+                        android:textColor="@color/Red"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_ExpandLocation"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/close" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_Locations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+                android:textColor="@color/DarkGrey"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_Contact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/White">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.mlife.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Contact"
+                        android:textColor="@color/Red"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_ExpandContact"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/close" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_Contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+                android:textColor="@color/DarkGrey"
+                android:layout_marginBottom="5dp"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

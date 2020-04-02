@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_Post"
+    tools:showIn="@layout/activity__post">
+
+    <LinearLayout
+        android:id="@+id/ll_userDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_UserImage"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/placeholderone"
+            app:civ_border_width="0dp"
+            app:civ_shadow="false" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <com.mlife.utils.CustomEditText
+        android:id="@+id/et_PostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_userDetails"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:maxLength="600"
+        android:hint="What's on your mind ? "
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="#dfdfdf" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_PrePostImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cv_AddImages"
+        android:layout_below="@+id/et_PostContent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_AddImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="Add Images" />
+
+
+            <ImageView
+                android:id="@+id/iv_UploadImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/addphoto" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

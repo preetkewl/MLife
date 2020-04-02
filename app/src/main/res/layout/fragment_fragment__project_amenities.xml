@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_ProjectAmenities">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_aboutProjects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_PreviousImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="75dp"
+                android:padding="10dp"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/classifiedleftarrow" />
+
+            <ImageView
+                android:id="@+id/iv_NextImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="75dp"
+                android:padding="10dp"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/classifiedrightarrow" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/BlackTrans"
+                android:gravity="center"
+                android:padding="2dp">
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@mipmap/locationicon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="Goa"
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />
+
+                <com.mlife.utils.CustomButton
+                    android:id="@+id/btn_DropEnquery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custombutton"
+                    android:drawableLeft="@mipmap/dropanenquiry"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Drop Enquiry"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_Amenities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

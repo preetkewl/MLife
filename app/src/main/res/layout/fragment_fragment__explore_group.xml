@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_ExploreGroup">
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_NoGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No explore record(s) found"
+        android:textColor="@color/textcolor"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/Red"
+                android:padding="8dp"
+                android:src="@mipmap/search" />
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_SearchGroups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="Search Group"
+                android:maxLength="35"
+                android:maxLines="1"
+                android:paddingLeft="50dp"
+                android:scrollHorizontally="true"
+                android:layout_weight="1"
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_ExploreGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_exp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

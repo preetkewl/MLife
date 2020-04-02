@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_MLDL_Updatse">
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_NoData"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Data Found"/>
+
+    <Spinner
+        android:id="@+id/sp_Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ede1e1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_Gallary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".9"
+        android:foregroundGravity="center"
+        android:padding="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_disclamer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+
+            android:text="@string/Disclaimer"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor"
+            android:textSize="12sp" />
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_CreateGroup"
+    tools:showIn="@layout/activity__create_group">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_GroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Group Title"
+                android:inputType="textCapSentences"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textColor="@color/LightGrey"
+                android:textColorHint="@color/Red" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Group Type"
+                android:textColor="@color/Red"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/sp_GroupStatus"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/DarkGrey" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:textColorHint="@color/Red">-->
+
+            <!--<com.mlife.Utils.CustomTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:text="Group Category"-->
+                <!--android:textColor="@color/Red"-->
+                <!--android:textSize="12sp" />-->
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/sp_GroupType"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:background="@color/DarkGrey" />-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <EditText
+            android:id="@+id/et_GroupDescription"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_box"
+            android:gravity="top"
+            android:hint="Enter description here ...."
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:maxLines="8"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/Red" />
+
+        <CheckBox
+            android:id="@+id/cb_NotifyEveryOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:text="Notify all members of your community."
+            android:textColor="@color/Red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Red" />
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I accept the "
+                android:textColor="@color/Red" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_TC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms"
+                android:textColor="@color/Red" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_CreatGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custombutton"
+            android:text="Create Group"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</ScrollView>

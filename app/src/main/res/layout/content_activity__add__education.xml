@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mlife.activities.Edit_Profile.ActivityAddEducation"
+    tools:showIn="@layout/activity__add__education">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColorHint="@color/Red">
+
+        <com.mlife.utils.CustomEditText
+            android:id="@+id/et_Institute"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Institute / University"
+            android:inputType="text|textShortMessage"
+            android:maxLength="60"
+            android:maxLines="1"
+            android:textColorHint="@color/Red" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColorHint="@color/Red">
+
+        <com.mlife.utils.CustomEditText
+            android:id="@+id/et_Degree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Degree"
+            android:inputType="text|textShortMessage"
+            android:maxLength="60"
+            android:maxLines="1"
+            android:textColorHint="@color/Red" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight=".5"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_YearFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Year From"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:textColorHint="@color/Red" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight=".5"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_YearTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Year To"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:textColorHint="@color/Red" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_SubmitDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custombutton"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/White" />
+
+    <Button
+        android:id="@+id/btn_DeleteDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custombutton"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:visibility="gone" />
+
+</LinearLayout>

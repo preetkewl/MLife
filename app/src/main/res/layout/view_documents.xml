@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_cell"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#ababab" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/pdficon" />
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".6"
+            android:text="Allotment Letter"
+            android:textAlignment="textStart"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/tvVendor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight=".4"
+            android:text="Aroma"
+            android:textAlignment="textStart"
+            android:textColor="@color/textcolor" />
+
+        <CheckBox
+            android:id="@+id/cb_Vas"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@mipmap/listarrow" />
+
+    </LinearLayout>
+
+</LinearLayout>

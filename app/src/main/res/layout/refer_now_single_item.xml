@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/activeRL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorSecondry">
+
+        <RelativeLayout
+            android:id="@+id/logoRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/grey_circle_shadow"
+            android:gravity="center">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/logoIV"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:elevation="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mahindra_logo"
+                app:riv_oval="true"
+
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/programNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logoRL"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/referNowRadio"
+            android:layout_toRightOf="@+id/logoRL"
+            android:ellipsize="end"
+            android:fontFamily="@font/proximanova_regular"
+            android:maxLines="1"
+            android:text="Mahindra lifespace referal programme"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/offerValidTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/programNameTV"
+            android:layout_below="@+id/programNameTV"
+            android:layout_marginTop="2dp"
+            android:text="Valid till 02 May 2018"
+            android:textColor="@color/text_grey"
+            android:textSize="12sp"
+           android:fontFamily="@font/proximanova_regular" />
+
+
+        <RadioButton
+            android:id="@+id/referNowRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/MyRaidoButton"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:scaleX="0.7"
+            android:scaleY="0.7"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/activeRL"
+        android:background="@color/read_grey" />
+
+</RelativeLayout>

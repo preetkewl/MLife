@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_Feedback"
+    tools:showIn="@layout/activity__feedback">
+
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Please rate us on site visit experiance"
+        android:textAlignment="center"
+        android:textColor="@color/Red"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="#b1b2b3" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/Red"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="#b1b2b3" />
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rb_Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <com.mlife.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Your feedback"
+        android:textAlignment="center"
+        android:textColor="@color/Red"
+        android:textSize="18sp" />
+
+    <com.mlife.utils.CustomEditText
+        android:id="@+id/et_Feedback"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_box"
+        android:gravity="top"
+        android:hint="Share your feedback"
+        android:inputType="textMultiLine"
+        android:maxLength="250"
+        android:maxLines="8"
+        android:padding="10dp"
+        android:textColorHint="@color/LightGrey"
+        android:textSize="13sp" />
+
+    <com.mlife.utils.CustomButton
+        android:id="@+id/btn_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custombutton"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/White" />
+
+</LinearLayout>

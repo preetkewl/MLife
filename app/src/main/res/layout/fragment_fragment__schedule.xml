@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_Schedule">
+
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_NoDataViteVisit"
+        android:visibility="gone"
+        android:layout_width="345dp"
+        android:text="No scheduled site visit record(s) found"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_Schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+</FrameLayout>

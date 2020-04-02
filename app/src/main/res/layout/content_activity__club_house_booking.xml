@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_ClubHouseBooking"
+    tools:showIn="@layout/activity__club_house_booking">
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_NoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No Data Available"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_ClubhouseBooking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

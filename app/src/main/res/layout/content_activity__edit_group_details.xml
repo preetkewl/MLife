@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mlife.activities.My_Community.Groups.Activity_EditGroupDetails"
+    tools:showIn="@layout/activity__edit_group_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_GroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Group Name"
+                android:inputType="textCapSentences"
+                android:textColor="@color/LightGrey"
+                android:textColorHint="@color/Red" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.mlife.utils.CustomEditText
+            android:id="@+id/et_GroupDescription"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_box"
+            android:gravity="top"
+            android:hint="Group description"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/Red" />
+
+        <Switch
+            android:id="@+id/sw_GroupType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Public/Private"
+            android:textColorHint="@color/Red" />
+
+        <com.mlife.utils.CustomButton
+            android:id="@+id/btn_UpdateGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custombutton"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

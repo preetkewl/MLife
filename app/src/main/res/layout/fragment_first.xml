@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.FirstFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_Listing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_registerIntrest"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_cell"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="left"
+                    android:text="Packages"
+                    android:textColor="@color/Red" />
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="left"
+                    android:text="Vendor"
+                    android:textColor="@color/Red" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_noData_Vas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Data"
+            android:textColor="@color/DarkGrey"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_interior"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight=".7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_registerIntrest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/custombutton"
+                android:gravity="center"
+                android:text="Register your interest"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/White" />
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_NewIntrest"
+                android:text="Have a different requirement?"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_NewIntrest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@drawable/custombuttongray"
+                android:gravity="center"
+                android:text="Tell us here"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/White" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_NoItemFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:visibility="gone">
+
+        <com.mlife.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Now no more hassles of hiring a carpenter or an interior designer.\n\nWhether you are a home owner setting up your dream home or an investor looking to set up your house prior to renting it, as a Mahindra customer you are privileged to get exclusive offers and be assured of quality at an unmatched price.\n\nPlease share your requirements with us and we shall help you realise the full potential of your dream home." />
+
+        <Button
+            android:id="@+id/btn_ShareIntrest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custombutton"
+            android:text="Share your requirements"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

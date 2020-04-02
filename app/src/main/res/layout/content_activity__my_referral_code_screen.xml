@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_MyReferralCodeScreen"
+    tools:showIn="@layout/activity__my_referral_code_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Project Name"
+                android:textColor="@color/Red" />
+
+            <Spinner
+                android:id="@+id/sp_MyProperty"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cac9c9" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_FriendName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Friend's name"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/Red" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_FriendNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Friend's mobile number"
+                android:inputType="phone"
+                android:textColorHint="@color/Red" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_FriendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Friend's email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/Red" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.mlife.utils.CustomEditText
+            android:id="@+id/et_PropertyDescription"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_box"
+            android:gravity="top"
+            android:hint="Enter description here ..."
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:maxLines="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/Red" />
+
+        <com.mlife.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="max character limit 250"
+            android:textAlignment="textEnd"
+            android:textSize="12sp" />
+
+        <com.mlife.utils.CustomButton
+            android:id="@+id/btn_referProperty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custombutton"
+            android:text="REFER PROPERTY"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</ScrollView>

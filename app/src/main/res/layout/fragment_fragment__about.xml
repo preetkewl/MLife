@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_About">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/iv_EditGroupDetails"
+                android:src="@mipmap/editpencil"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"/>
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_GroupOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Kanwarpreet Singh"
+                android:textColor="@color/Red"
+                android:textSize="16sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_GroupCreation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_GroupOwner"
+                android:text="Date"
+                android:textColor="@color/Red"
+                android:textSize="16sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_GroupLastActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_GroupCreation"
+                android:text="Last Activity"
+                android:textColor="@color/Red"
+                android:textSize="16sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_GroupDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_GroupLastActivity"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/DarkGrey" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

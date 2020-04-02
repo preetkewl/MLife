@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:C./Android Projects/MLife/app/libs/billdeskSDK_v2.0.2.aar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/billdeskSDK_v2.0.2.aar/7e65e7894f7535a445614fb0025a9639/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/billdeskSDK_v2.0.2.aar/7e65e7894f7535a445614fb0025a9639/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppLoyalieTheme"  parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#e31837</item>
+        <item name="colorPrimaryDark">#e31837</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+    <style name="MyRaidoButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:colorControlNormal">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:colorControlHighlight">#c51162</item>
+    </style>
+
+    <style name="AppLoyalieTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorMain</item>
+        <item name="colorPrimaryDark">@color/colorMainDark</item>
+        <item name="colorAccent">@color/colorSecondry</item>
+        <item name="colorControlNormal">@color/colorMain</item>
+        <item name="android:textColorSecondary">@color/colorMain</item>
+        <item name="colorControlHighlight">@color/colorMain</item>
+        <item name="colorSwitchThumbNormal">@color/colorSecondry</item>
+        <item name="colorControlActivated">@color/colorMain</item>
+    </style>
+
+
+
+</resources>

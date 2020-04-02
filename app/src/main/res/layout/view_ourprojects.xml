@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/White"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <ImageView
+                android:id="@+id/iv_OurProjectImage"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/projectluanch" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/BlackTrans"
+                android:gravity="center_vertical">
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_ProjectName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@mipmap/ourprojecticon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="Property Name"
+                    android:textColor="@color/White" />
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_ProjectLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@mipmap/locationicon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="Location"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ImageCatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mlife.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Project Typology:  "
+                        android:textColor="@color/textcolor"
+                        android:textSize="16sp" />
+
+                    <com.mlife.utils.CustomTextView
+                        android:id="@+id/tv_ProjectTopology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="1, 2 and 3 BHK"
+                        android:textColor="@color/DarkGrey" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mlife.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Price: "
+                        android:textColor="@color/textcolor"
+                        android:textSize="16sp" />
+
+                    <com.mlife.utils.CustomTextView
+                        android:id="@+id/tv_ProjectPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Starting at 19.9 Lacs"
+                        android:textColor="@color/DarkGrey" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/Light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_amanities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.mlife.utils.CustomButton
+                    android:id="@+id/btn_ExploreProject"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:background="@mipmap/exploreprojectbutton" />
+
+                <com.mlife.utils.CustomButton
+                    android:id="@+id/btn_DropEnquiry"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:background="@mipmap/dropenqbutton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

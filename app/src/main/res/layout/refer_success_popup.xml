@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSecondry"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/programNameTV"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Mahindra lifespace gold programme"
+            android:textAllCaps="false"
+            android:gravity="left"
+            android:textColor="@color/colorSecondry"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/proximanova_regular"
+            android:background="@color/colorMain"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/countTV"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:background="@color/colorMain"
+                android:textColor="@color/colorSecondry"
+                android:textSize="12sp"
+                android:text="4 of 4"
+               android:fontFamily="@font/proximanova_regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addedLabelTV"
+            android:text="contacts were successfully referred"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSecondry"
+            android:textSize="12sp"
+            android:fontFamily="@font/proximanova_regular"
+            android:background="@color/colorMain"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="12dp"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/referSuccessRecycler"
+            android:layout_marginBottom="8dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</FrameLayout>

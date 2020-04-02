@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mlife.activities.ActivityMyPaymentsCustomPayment"
+    tools:showIn="@layout/activity__custom_payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_InvoiceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:text=""
+            android:textColor="@color/Red"
+            android:textSize="16sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:text="Month: September, 2017"
+            android:textColor="@color/LightGrey"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="2dp"
+            android:text=""
+            android:textColor="@color/LightGrey"
+            android:textSize="14sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_DueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="2dp"
+            android:text=""
+            android:textColor="@color/LightGrey"
+            android:textSize="14sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="2dp"
+            android:text=""
+            android:textColor="@color/LightGrey"
+            android:textSize="14sp" />
+
+        <com.mlife.utils.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:id="@+id/ed_amount"
+            android:drawableLeft="@drawable/ic_rupee"
+
+           android:drawablePadding="14dp"
+            android:inputType="numberDecimal"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/cb_customAmount"
+            android:textColor="@color/textcolor"
+            android:layout_height="wrap_content"
+            android:text="Change payable amount"/>
+
+        <com.mlife.utils.CustomButton
+            android:id="@+id/btn_Pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custombutton"
+            android:text="Pay Now"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

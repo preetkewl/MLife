@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mlife">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".activities.ActivityLoginOTP"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activities.ActivityLoginWithOTP"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDlB2ddI87Z_2RHVKc23r_gymLIOFmlXCA" /> <!-- AIzaSyCsuJChmuAmnpuNHZnanFJPqSeU8kxw1Xk -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="794c77ece9c660715fd622fa4f2e4c7c03e70de0" />
+
+        <activity
+            android:name=".activities.ActivitySplash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" /> -->
+        </activity>
+        <activity
+            android:name=".activities.ActivityLogin"
+            android:label="@string/title_activity__login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityHome"
+            android:label="@string/title_activity__navigation__dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_NewProjectLaunch"
+            android:label="@string/title_activity__new_project_launch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivitySiteVisitListing"
+            android:label="@string/title_activity__site_visit_listing"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivitySiteVisitSchedule"
+            android:label="@string/title_activity__schedule_site_visit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_OurProjects"
+            android:label="@string/title_activity__our_projects"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityMahindraLifespacesProjects"
+            android:label="@string/title_activity__about_project"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityNotification"
+            android:label="@string/title_activity__notification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_OffersAndNews"
+            android:label="@string/title_activity_offers_and_news"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_NewProjectDetails"
+            android:label="@string/title_activity__new_project_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityNotificationSettings"
+            android:label="@string/title_activity__edit_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_MyProperty"
+            android:label="@string/title_activity__my_property"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityMyRequestListing"
+            android:label="@string/title_activity__my_request"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityMyRequestNewTicket"
+            android:label="@string/title_activity__my_request__new_ticket"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_MyCommunity"
+            android:label="@string/title_activity__my_community"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Groups.Activity_Groups"
+            android:label="@string/title_activity__groups"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Groups.Activity_CreateGroup"
+            android:label="@string/title_activity__create_group"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_Feedback"
+            android:label="@string/title_activity__feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_FeedbackChatHistory"
+            android:label="@string/title_activity__feedback_chat_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_Notice"
+            android:label="@string/title_activity__notice"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_NoticeDetails"
+            android:label="@string/title_activity__notice_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_Events"
+            android:label="@string/title_activity__events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_EventsDetails"
+            android:label="@string/title_activity__events_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_ClubHouse_Listing"
+            android:label="@string/title_activity__club_house_booking"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_ClubHouse_BookClubHouse"
+            android:label="@string/title_activity__book_club_house"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Classified.Activity_ClassifiedsAndOffers"
+            android:label="@string/title_activity__classifieds_and_offers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityValueAddedServiceMyInterior"
+            android:label="@string/title_activity__my_interior"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Classified.Activity_PostNewClassified"
+            android:label="@string/title_activity__post_new_classified"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Classified.Activity_ClassifiedView"
+            android:label="@string/title_activity__classified_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_KeyLocation"
+            android:label="@string/title_activity__key_location"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Groups.Activity_GroupDetails"
+            android:label="@string/title_activity__group_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_MyPropertyDetails"
+            android:label="@string/title_activity__my_property_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_ImageViewer"
+            android:label="@string/title_activity__image_viewer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityMyPaymentsListing"
+            android:label="@string/title_activity__payments"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityMyPropertyDetails"
+            android:label="@string/title_activity__about_my_property"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_TermsAndConditions"
+            android:label="@string/title_activity__terms_and_conditions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Activity_Directory"
+            android:label="@string/title_activity__directory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityChangeProperty"
+            android:label="@string/title_activity__change_property"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_Maps"
+            android:label="@string/title_activity__maps"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Groups.Activity_Post"
+            android:label="@string/title_activity__post"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityWebView"
+            android:label="@string/title_activity__web_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Groups.Activity_Comment"
+            android:label="@string/title_activity__comment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_ThankYou"
+            android:label="@string/title_activity__thank_you"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.billdesk.library.OtpDialogActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="com.billdesk.sdk.PaymentOptions" />
+        <activity
+            android:name="com.billdesk.sdk.BankList"
+            android:theme="@style/Theme.BD_Dialog" />
+        <activity
+            android:name="com.billdesk.sdk.QuickPayView"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.CreditCardView"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.RetryPayment"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.PaymentWebView"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.billdesk.utils.URLUtilActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.billdesk.sdk.Emerald2Activity"
+            android:configChanges="keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.billdesk.sdk.UpiActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ActivityWelcome"
+            android:label="@string/title_activity__welcome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityGuideScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_ImageViewers_Slider"
+            android:label="@string/title_activity__image_viewers__slider"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Extras.Activity_OurProjects_WebView"
+            android:label="@string/title_activity__our_projects__web_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityImageViewer"
+            android:label="@string/title_activity__construction__update__image__viewer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Edit_Profile.ActivityEditProfile"
+            android:label="@string/title_activity__edit_profile_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Edit_Profile.ActivityViewProfile"
+            android:label="@string/title_activity__view_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Edit_Profile.ActivityAddEducation"
+            android:label="@string/title_activity__add__education"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityValueAddedService"
+            android:label="@string/title_activity__value__added__service"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityValueAddedServiceRequirements"
+            android:label="@string/title_activity__vas__requirements"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Groups.Activity_AcceptMembers"
+            android:label="@string/title_activity__accept_members"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Groups.Activity_EditGroupDetails"
+            android:label="@string/title_activity__edit_group_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityForgotPassword"
+            android:label="@string/title_activity__edit_group_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.referal_section.ReferSectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.refer_now.ReferNowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.select_contact.SelectContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.promote_us.PromoteUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.reward_wallet.RewardWalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.promote_us_contact.PromoteContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.utils.BaseActivity"
+            android:theme="@style/AppLoyalieTheme" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.promote_us.PromoteUsInputActivity"
+            android:theme="@style/AppLoyalieTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.utils.MlsBaseActivty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme" />
+        <activity
+            android:name="com.example.focpc.mahindralifespaces.ui.activities.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoyalieTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityMyPaymentsCustomPayment"
+            android:label="@string/title_activity__custom_payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.My_Community.Classified.Activity_ManageClassified"
+            android:label="@string/title_activity__manage_classified"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ActivityForgotPasswordOTP"
+            android:label="@string/title_activity__forgot_password_otp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

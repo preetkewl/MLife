@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.focpc.mahindralifespaces.ui.activities.refer_now.ProgramListFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Choose a Project"
+        android:id="@+id/chooseLabelTV"
+        android:textColor="@color/text_color"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:background="@drawable/white_shadow_gradient_bg"
+        android:fontFamily="@font/proximanova_regular"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/programsRV"
+        android:paddingBottom="40dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/chooseLabelTV">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_ripple_bg"
+        android:text="Continue"
+        android:fontFamily="@font/proximanova_regular"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondry"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No active projects found"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="12sp"
+        android:fontFamily="@font/proximanova_regular"
+        android:textColor="@color/hint_grey"/>
+
+
+
+
+</RelativeLayout>

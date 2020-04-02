@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+    android:id="@+id/iv_Imageview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#af000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_towerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <com.mlife.utils.CustomButton
+            android:visibility="gone"
+            android:id="@+id/btn_readMore"
+            android:background="@drawable/custombutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:text="Read more..."
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr_readMore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#af000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="310dp"
+            android:background="@drawable/shape_box"
+            android:padding="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_projectDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

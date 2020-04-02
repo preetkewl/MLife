@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/White"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:orientation="vertical">
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_FeedbackHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need Feedback on your Ride"
+                android:textColor="@color/Red"
+                android:textSize="16sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_FeedbackDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday, June 20 2017, 06.30 Pm."
+                android:textColor="@color/LightGrey"
+                android:textSize="14sp" />
+
+
+            <com.mlife.utils.CustomTextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_FeedbackSubmitted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FEEDBACK SUBMITTED"
+                android:textColor="@color/Color"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/newprojectarrow"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

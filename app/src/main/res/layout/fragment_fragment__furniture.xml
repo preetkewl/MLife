@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_Furniture">
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_NoDataFurniture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Data Found."
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_cell"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="left"
+                    android:text="Packages"
+                    android:textColor="@color/Red" />
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="left"
+                    android:text="Vendor"
+                    android:textColor="@color/Red" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_furniture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

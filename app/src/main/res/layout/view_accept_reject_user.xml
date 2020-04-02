@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_userImage"
+        android:layout_width="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/comment_user" />
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/iv_userImage"
+        android:text="Kanwarpreet singh wadhawan" />
+
+    <Button
+        android:id="@+id/btn_Accept"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/iv_userImage"
+        android:background="@drawable/custombutton"
+        android:layout_marginBottom="10dp"
+        android:text="Accept"
+        android:textAllCaps="false"
+        android:textColor="@color/White" />
+
+    <Button
+        android:id="@+id/btn_Reject"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/btn_Accept"
+        android:background="@drawable/custombuttongray"
+        android:text="Reject"
+        android:textAllCaps="false"
+        android:textColor="@color/White" />
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_RequestResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tv_UserName"
+        android:layout_toEndOf="@+id/iv_userImage"
+        android:text="Request Removed" />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LightGrey"/>
+
+</RelativeLayout>

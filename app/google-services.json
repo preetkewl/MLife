@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "155326711482",
+    "firebase_url": "https://mahindra-clapp.firebaseio.com",
+    "project_id": "mahindra-clapp",
+    "storage_bucket": "mahindra-clapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155326711482:android:5cd0f1b7cb6a57fa",
+        "android_client_info": {
+          "package_name": "com.mlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155326711482-sq8sss4tn9l50baqhrhitmn3h2n8ibmm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlife",
+            "certificate_hash": "66a5bae345a9f63df521cc1515f87054498dce5e"
+          }
+        },
+        {
+          "client_id": "155326711482-v132efbgvqibc7qfhlb21mv29uidlnbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsuJChmuAmnpuNHZnanFJPqSeU8kxw1Xk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155326711482-v132efbgvqibc7qfhlb21mv29uidlnbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

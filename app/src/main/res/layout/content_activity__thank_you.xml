@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_TermsAndConditions"
+    tools:showIn="@layout/activity__terms_and_conditions">
+
+    <ImageView
+        android:id="@+id/iv_DisplayImage"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/termsconditionsicon" />
+
+    <TextView
+        android:id="@+id/tv_TextHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/Red"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_TextDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/LightGrey"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
+

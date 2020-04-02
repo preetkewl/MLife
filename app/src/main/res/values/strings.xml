@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">M-Life</string>
+    <string name="terms"><u>Terms &amp; Conditions</u></string>
+    <string name="title_activity__login">Log in</string>
+    <string name="email">E-mail ID</string>
+    <string name="password">Password</string>
+    <string name="bd_browser_key">adb10cd5-d127-4553-bc7d-0cb2207ef149</string>
+    <string name="header_align">center</string>
+
+    <string name="newAccount">Dont have an account?</string>
+    <string name="title_activity__forgot_password">Forgot Password</string>
+    <string name="title_activity__navigation__dashboard">Dashboard</string>
+
+    <string name="title_activity__new_project_launch">New Project Launch</string>
+    <string name="title_activity__site_visit_listing">Site Visit</string>
+    <string name="title_activity__schedule_site_visit">Schedule Site Visit</string>
+    <string name="title_activity__our_projects">Our Projects</string>
+    <string name="title_activity__about_project">About Project</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity__notification">Notifications</string>
+    <string name="title_activity_offers_and_news">Offers &amp; News</string>
+    <string name="title_activity__new_project_details">Activity_NewProjectDetails</string>
+    <string name="title_activity__edit_profile">Edit Profile</string>
+    <string name="title_activity__my_property">My Property</string>
+    <string name="title_activity__my_request">My Request</string>
+    <string name="title_activity__my_request__new_ticket">New Ticket</string>
+    <string name="title_activity__my_referral">My Referral</string>
+    <string name="title_activity__my_community">My Community</string>
+    <string name="title_activity__groups">Groups</string>
+    <string name="title_activity__create_group">Create Group</string>
+    <string name="title_activity__feedback">Feedback</string>
+    <string name="title_activity__feedback_chat_history">Feedback</string>
+
+    <string name="Disclaimer"><b><i><u> Disclaimer (Click here) </u></i></b></string>
+
+
+    <string name="title_activity__notice">Notices</string>
+    <string name="title_activity__notice_details">Notice Details</string>
+    <string name="title_activity__events">Events</string>
+    <string name="title_activity__events_details">Event Details</string>
+    <string name="title_activity__club_house_booking">Clubhouse Booking</string>
+    <string name="title_activity__book_club_house">Book Clubhouse</string>
+    <string name="title_activity__classifieds_and_offers">Classifieds And Offers</string>
+    <string name="title_activity__my_interior">My Interior</string>
+    <string name="title_activity__post_new_classified">Post New Classified</string>
+    <string name="title_activity__classified_view">Classified View</string>
+    <string name="title_activity__key_location">Key Locations</string>
+    <string name="title_activity__group_details">Group Details</string>
+    <string name="title_activity__my_property_details">Activity_MyPropertyDetails</string>
+    <string name="title_activity__image_viewer">Activity_ImageViewer</string>
+    <string name="title_activity__payments">Activity_Payments</string>
+    <string name="title_activity__about_my_property">Activity_AboutMyProperty</string>
+    <string name="title_activity__terms_and_conditions">Activity_TermsAndConditions</string>
+    <string name="title_activity__directory">Activity_Directory</string>
+    <string name="title_activity__change_property">Activity_ChangeProperty</string>
+    <string name="title_activity__my_referral_code_screen">Activity_MyReferralCodeScreen</string>
+    <string name="title_activity__maps">Activity_Maps</string>
+    <string name="title_activity__post">Activity_Post</string>
+    <string name="title_activity__web_view">Activity_WebView</string>
+    <string name="title_activity__comment">Activity_Comment</string>
+
+    <string name="title_activity__thank_you">Activity_ThankYou</string>
+    <string name="title_activity__welcome">Activity_Welcome</string>
+    <string name="welcome_text">\nYou have just logged into the <b>M-Life</b> app by Mahindra Lifespaces.\n\nNow, create your own community with co-residents, get updates about your Mahindra property and its payments, view and make payments on the go, submit queries or complaints instantly, and avail exclusive interior and other value added services.</string>
+
+    <string name="title_activity__image_viewers__slider">Activity_ImageViewers_Slider</string>
+    <string name="title_activity__our_projects__web_view">Activity_OurProjects_WebView</string>
+    <string name="title_activity__construction__update__image__viewer">
+        Activity_Construction_Update_Image_Viewer
+    </string>
+    <string name="title_activity__edit_profile_screen">Activity_EditProfileScreen</string>
+    <string name="title_activity__view_profile">Activity_ViewProfile</string>
+    <string name="title_activity__add__education">Activity_Add_Education</string>
+    <string name="error_Message">Something went wrong, Try again later.</string>
+    <string name="title_activity__value__added__service">Activity_Value_Added_Service</string>
+    <string name="title_activity__vas__requirements">Activity_VAS_Requirements</string>
+    <string name="title_activity__accept_members">Activity_AcceptMembers</string>
+    <string name="title_activity__edit_group_details">Activity_EditGroupDetails</string>
+
+    <string name="help_us_spread_word">"Help us spread the word and stand a chance to win INR 25000 !"</string>
+    <string name="type_of_inst">"Type of Institution"</string>
+    <string name="promote_us">Promote Us</string>
+    <string name="click_to_choose">Click to choose</string>
+    <string name="come_up_with">Come up with innovative ideas to promote us. For example, connect us to an HR head or a Blogger.
+        \nOr get us a standee space at a restaurant near our project
+        \n\n\* Terms and conditions apply
+    </string>
+    <string name="network_unavailable">Network connection unavailable</string>
+
+    <string name="disc1">You are being redirected to a page managed solely by Loyalie IT-Solutions Pvt.
+        Ltd (herein after known as <b>‘The Company’</b>), a company registered under the Indian Companies Act,
+        2013 and registered as a real estate agent bearing registration number A51900010267 registered under MahaRERA and TN/Agent/0178/2017 under Tamil Nadu RERA.</string>
+
+    <string name="disc2">Where the M-life App by Mahindra Lifespace Developers Limited contain links to other sites,
+        applications and resources provided by third parties including Loyalie, these links are provided for your information only.
+        Mahindra Lifespace Developers Limited have no control over the contents of those sites, applications or resources.
+        Mahindra Lifespace Developers Limited assume no responsibility for the content of websites linked on our sites.
+        Such links should not be interpreted as endorsement by Mahindra Lifespace Developers Limited of those linked websites.
+        Mahindra Lifespace Developers Limited or its affiliates shall no circumstance will be liable for any expense, loss or damage including,
+        without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use,
+        of data,arising out of or in connection with the use of this Website.</string>
+
+    <string name="disc11">The payout will happen only in accordance with the Payment Policy laid out by Loyalie IT-Solutions Pvt. Ltd. Please reach out to support@loyalie.com for the payment policy of the company. Provide details of PAN card, and Goods &amp; Service Tax number if applicable.</string>
+
+    <string-array name="disc_array">
+        <item>@string/disc1</item>
+        <item>@string/disc2</item>
+
+        <item>By taking any actions on the page, you have consented to the Terms &amp; Conditions and Privacy Policy available on the link and the website www.loyalie.com</item>
+        <item>Provide consent by agreeing to these terms and conditions, that you will be regarded as a consultant providing lead generation services to the Company.</item>
+        <item>The consultant is required to mention the "Loyalie" name during any communication with prospective customers. It is being made emphatically clear that the details of the prospective customer are being passed to Loyalie IT-Solutions Pvt. Ltd as a registered real estate agent and not to Mahindra Lifespace Developers Limited.</item>
+        <item>The consultant is required to obtain explicit permission from the person who is being recommendedthe person has agreed to be contacted by Loyalie IT-Solutions Pvt. Ltd and its partners/clients/ vendors by whatever name is known.</item>
+        <item>The Company undertakes no guarantees on the qualification or conversion of the lead/prospective customer. The details of the prospective customer have to be vetted as a qualified lead as per the terms and conditions laid out by Mahindra Lifespace Developers Limited. For details, please contact support@loyalie.com</item>
+        <item>Communicate project related details to the prospective customer only as per applicable RERA Authority guidelines, where the information is exclusively being obtained from the Appropriate RERA website.</item>
+        <item>The Consultant undertakes never to make an offer for sale or offer for purchase on behalf of any of the parties in the transaction.</item>
+        <item>Not misuse the "LOYALIE" brand name for personal benefit, for example LOYALIE may have privilege offers which the referrer must not use for their advantage</item>
+        <item>Abide by the LOYALIE and partner brand guidelines on advertising materials and not use any other marketing collateral developed</item>
+        <!--<item>@string/disc11</item>-->
+        <item>Appointment of consultants is at the absolute discretion of LOYALIE. LOYALIE may accept or reject the application without providing any reason We may, without any prior notice or reason, cancel the consultancy arrangement and cancel any leads passed on to Loyalie by the consultant.</item>
+        <item>The Consultant confirms that he/she is not involved in any economic offences, tax default or moral turpitude</item>
+
+        <item>Influence the prospective customer to take quick informed buying decisions</item>
+
+        <item>Keep the sales pipeline busy with a steady stream of new customers</item>
+
+        <item>Declaration:</item>
+
+        <!--<item>I, hereby, declare that I have read and understood the above mentioned information and have gone over the terms and conditions and privacy policy on www.loyalie.com, and by clicking on the button below I am agreeing to register with LOYALIE as a Consultant and I shall abide by the organization's terms and conditions and privacy policy mentioned.</item>-->
+
+
+    </string-array>
+    <string name="title_activity__custom_payment">Activity_CustomPayment</string>
+    <string name="title_activity__manage_classified">Activity_ManageClassified</string>
+    <string name="title_activity__forgot_password_otp">Activity_ForgotPasswordOTP</string>
+</resources>

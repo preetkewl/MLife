@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondry">
+
+
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/white_shadow_gradient_bg"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/programTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="Project"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/claimCodeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="Valid Till"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/oneVisitRewardRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerView" />
+
+    <TextView
+        android:id="@+id/one_visit_left_status_emptyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/proximanova_regular"
+        android:text="You don't have any upcoming rewards."
+        android:textColor="@color/hint_grey"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondry"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/promoteUsTitleCard"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorMain"
+        android:elevation="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dialogTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center"
+            android:text="Housing Societies"
+            android:textColor="@color/colorSecondry"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promoteUsTitleCard">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/contInstWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/grey_border_rectangle"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/instNameET"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/grey_border_rectangle"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:hint="Name of institutions"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/instiWrapper"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+                <FrameLayout
+                    android:id="@+id/instiWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="@id/instNameET"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/instNameET">
+
+                    <ImageView
+                        android:id="@+id/instiIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:srcCompat="@drawable/ic_search_red" />
+                </FrameLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/cityET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/grey_border_rectangle"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="City"
+                android:inputType="textCapWords"
+                android:maxLength="100"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/contInstWrapper" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/contNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/grey_border_rectangle"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cityET">
+
+                <EditText
+                    android:id="@+id/contNameET"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/grey_border_rectangle"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:hint="Contact person"
+                    android:inputType="textCapWords"
+                    android:maxLength="100"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/attachWrapper"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/attachWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="@id/contNameET"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/contNameET">
+
+                    <ImageView
+                        android:id="@+id/attachIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:srcCompat="@drawable/ic_contact" />
+                </FrameLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/contMobNumET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/grey_border_rectangle"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="Contact Person's phone number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contNameWrapper" />
+
+            <EditText
+                android:id="@+id/designationET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/grey_border_rectangle"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="Designation of person"
+                android:inputType="textCapSentences"
+                android:maxLength="100"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contMobNumET" />
+
+            <EditText
+                android:id="@+id/commentsET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/grey_border_rectangle"
+                android:fontFamily="@font/proximanova_regular"
+                android:gravity="left|top"
+                android:hint="Comments..."
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="8"
+                android:maxLength="500"
+                android:padding="8dp"
+                android:textColor="@color/text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/designationET" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_ripple_bg"
+        android:fontFamily="@font/proximanova_regular"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

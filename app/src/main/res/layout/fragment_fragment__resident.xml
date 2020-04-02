@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_Resident">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@color/Red"
+            android:padding="8dp"
+            android:src="@mipmap/search" />
+
+        <com.mlife.utils.CustomEditText
+            android:id="@+id/et_SearchResident"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="Search Member"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="50dp"
+            android:scrollHorizontally="true" />
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_NoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No resident record(s) found"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_resident"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

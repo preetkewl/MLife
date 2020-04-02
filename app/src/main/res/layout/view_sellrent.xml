@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_offerHeadin_SR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heading"
+            android:textColor="@color/Red"
+            android:textSize="16sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_offerDetails_SR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:text="Details"
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_postedBy_SR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Posted By"
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/tv_postedDate_SR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date-Time"
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#dcdcdc" />
+
+</LinearLayout>

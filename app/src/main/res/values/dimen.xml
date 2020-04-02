@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="header_height">60dp</dimen>
+
+    <!-- From: file:/C:/Users/elchanan/Documents/GitHub/sdp/sdp-android/src/main/res/values/positive_sdps.xml -->
+    <eat-comment />
+    <!-- From: file:/C:/Users/elchanan/Documents/GitHub/sdp/sdp-android/src/main/res/values/negative_sdps.xml -->
+    <eat-comment />
+    <!-- From: file:/C:/Users/elchanan/Documents/GitHub/sdp/sdp-android/src/main/res/values/meta.xml -->
+    <eat-comment />
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+</resources>

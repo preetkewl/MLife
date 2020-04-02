@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mlife.activities.Edit_Profile.ActivityEditProfile"
+    tools:showIn="@layout/activity__edit_profile_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/editprofilebg" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/iv_UserImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/default_pic"
+                app:civ_border_width="0dp"
+                app:civ_shadow="false" />
+
+            <ImageView
+                android:id="@+id/iv_EditProfilePicture"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/iv_UserImage"
+                android:layout_alignTop="@+id/iv_UserImage"
+                android:src="@drawable/editprofilepencilicon" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_UserImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Mobile number"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Unit"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Email"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserHomeTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Home town"
+                    android:inputType="text"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserLivesIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Lives in"
+                    android:inputType="text"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Date of birth"
+                    android:inputType="text"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserMarriageAniversary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Marriage aniversary"
+                    android:inputType="text"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_UserIntrest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3.5sp"
+                android:layout_marginRight="3.5sp"
+                android:background="@color/DarkGrey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.mlife.utils.CustomTextView
+                    android:id="@+id/tv_Public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="MAKE ABOVE INFORMATION PUBLIC"
+                    android:textColor="@color/Red"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/sw_Profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+
+                <com.mlife.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/tv_Public"
+                    android:layout_marginTop="5dp"
+                    android:text="By allowing your details (Mobile, Unit and Email) will be visible to other users in My Community."
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.mlife.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e7e4e4e6"
+            android:drawableRight="@mipmap/editpencil"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="EDUCATIONAL QUALIFICATION"
+            android:textColor="@color/Red"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_Education_One"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:hint="Institute / University"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_Education_Two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:hint="Institute / University"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColorHint="@color/Red"
+                    android:visibility="gone" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_Education_Three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:hint="Institute / University"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColorHint="@color/Red"
+                    android:visibility="gone" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_Education_Add_New"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="2dp"
+                android:text="Add New"
+                android:textAlignment="textEnd"
+                android:textColor="@color/Red" />
+
+        </LinearLayout>
+
+        <com.mlife.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e7e4e4e6"
+            android:drawableRight="@mipmap/editpencil"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="OCCUPATION"
+            android:textColor="@color/Red"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/sp_UserOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3.5sp"
+                android:layout_marginRight="3.5sp"
+                android:background="@color/DarkGrey" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Company name"
+                    android:inputType="text"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Role / Designation"
+                    android:inputType="text"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/Red">
+
+                <com.mlife.utils.CustomEditText
+                    android:id="@+id/et_UserLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Location"
+                    android:inputType="text"
+                    android:textColorHint="@color/Red" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.mlife.utils.CustomButton
+            android:id="@+id/btn_UpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/custombutton"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</ScrollView>

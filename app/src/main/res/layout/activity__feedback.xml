@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Activities.Activity_Feedback">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/iv_Back_ManageDitePlan"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:src="@mipmap/cross" />
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Feedback"
+                android:textColor="@color/textcolor" />
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_activity__feedback" />
+
+</android.support.design.widget.CoordinatorLayout>

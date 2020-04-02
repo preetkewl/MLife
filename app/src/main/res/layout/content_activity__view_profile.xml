@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mlife.activities.Edit_Profile.ActivityViewProfile"
+    tools:showIn="@layout/activity__view_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/editprofilebg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/Red"
+                android:textSize="17sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_Occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="3"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_EducationOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_EducationTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:visibility="gone"
+                android:maxLines="2"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp"/>
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_EducationThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_UserContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_UserEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_UserUnitId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_UserImage"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/placeholderone"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#ffffff" />
+
+    </RelativeLayout>
+
+</LinearLayout>

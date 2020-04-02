@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_ProjectImage"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/selectproperty4" />
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@mipmap/check" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_Project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="Joyfull Homes"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor" />
+
+</LinearLayout>

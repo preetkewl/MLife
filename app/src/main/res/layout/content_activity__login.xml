@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mlife.activities.ActivityLogin"
+    tools:showIn="@layout/activity__login">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/usericon"
+                android:text="davinder.singh@milagro.in"
+                android:drawablePadding="10dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/Red" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/logo"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/Red">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/passwordicon"
+                android:text="mil@150A"
+                android:drawablePadding="10dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/Red" />
+            <!--android:text="mlife#1234"-->
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.mlife.utils.CustomTextView
+            android:id="@+id/btn_ForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            android:text="Forgot Password?"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_RememberUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/LightGrey" />
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember E-mail ID"
+                android:textColor="@color/LightGrey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_TC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Red" />
+
+            <com.mlife.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I accept the "
+                android:textColor="@color/Red" />
+
+            <com.mlife.utils.CustomTextView
+                android:id="@+id/tv_TC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms"
+                android:textColor="@color/Red" />
+
+        </LinearLayout>
+
+        <com.mlife.utils.CustomButton
+            android:id="@+id/btn_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custombutton"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <com.mlife.utils.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custombutton"
+            android:text="Forgot password"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/newAccount"
+            android:textColor="@color/LightGrey"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Red"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

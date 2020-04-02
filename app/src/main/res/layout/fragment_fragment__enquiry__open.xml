@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milagro.mahindraclapp.com.mahindraclapp.Fragments.Fragment_Enquiry_Open">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_Myenq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"/>
+
+    <com.mlife.utils.CustomTextView
+        android:id="@+id/tv_NoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="No open ticket record(s) found"
+        android:textColor="@color/textcolor"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:textSize="16sp" />
+
+</FrameLayout>

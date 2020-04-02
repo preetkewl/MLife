@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/White"
+    app:cardBackgroundColor="@color/White"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mlife.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="DROP AN ENQUIRY"
+            android:textColor="@color/Red"
+            android:textSize="16sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_FirstNameDropEnquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/fullnameicon"
+                android:drawablePadding="5dp"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_LastNameDropEnquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/fullnameicon"
+                android:drawablePadding="5dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_EmailDropEnquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/mailicon"
+                android:drawablePadding="5dp"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.mlife.utils.CustomEditText
+                android:id="@+id/et_MobileDropEnquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/mobiileicon"
+                android:drawablePadding="5dp"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.mlife.utils.CustomEditText
+            android:id="@+id/et_DescriptionCallBack"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_box"
+            android:gravity="top"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:maxLines="8"
+            android:padding="5dp"
+            android:textColorHint="@color/hint_grey" />
+
+        <com.mlife.utils.CustomButton
+            android:id="@+id/btn_Submit_Forgot"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/custombutton"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#Ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
